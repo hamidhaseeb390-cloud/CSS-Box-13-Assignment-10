@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Boxes Layout Example</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    body {
+    background-color: #7c5b00;
+    padding: 20px;
+    }
+
+    header{
+    background-color: #037ca1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    }
+
+    footer {
+    background-color: #000294;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    }
+
+    main {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+    }
+
+    aside {
+    background-color: #66bb6a;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    }
+
+    article {
+    background-color: #ffb300;
+    flex: 3;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    }
+
+    .images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+    }
+
+    .image {
+    background-color: #fdd835;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    border-radius: 6px;
+    flex: 1;
+    }
+</style>
+</head>
+<body>
+
+    <div 
+    <header><i>Header</i></header>
+
+    <main>
+        <aside><i>Aside</i></aside>
+
+        <article>
+        <h2><i>Article</i></h2>
+        <div class="images">
+            <div class="image"><i>Image</i></div>
+            <div class="image"><i>Image</i></div>
+            <div class="image"><i>Image</i></div>
+        </div>
+        </article>
+    </main>
+
+    <footer><i>Footer</i></footer>
+</body>
+</html>
